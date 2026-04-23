@@ -47,7 +47,7 @@ st.title("❤️ Heart Disease Risk AI System")
 st.markdown("### Smart AI-based Health Prediction & Analysis")
 
 # ------------------ LOAD + TRAIN ------------------
-df = pd.read_csv('heart_hci.csv')
+df = pd.read_csv('heart_hci/heart_disease_uci.csv')
 
 df = df.drop(['id', 'ca', 'thal', 'slope'], axis=1)
 df['num'] = df['num'].apply(lambda x: 1 if x > 0 else 0)
